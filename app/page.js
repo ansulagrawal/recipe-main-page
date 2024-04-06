@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-full md:w-2/3 md:my-32 md:p-10 m-auto flex flex-col justify-center bg-white rounded-none md:rounded-3xl overflow-hidden">
+    <main className="w-full md:w-3/5 md:my-32 md:p-10 m-auto flex flex-col justify-center bg-white rounded-none md:rounded-3xl overflow-hidden">
       <div className="h-40 md:h-96 relative mb-5 overflow-hidden  rounded-none md:rounded-3xl ">
         <Image src="/omelette.jpeg" fill alt="Omelette" />
       </div>
@@ -16,10 +16,8 @@ export default function Home() {
           choice of cheese, vegetables, or meats.
         </p>
         <section id="preparation-time" className="bg-rose-white p-6 my-4">
-          <ul>
-            <label className="text-primary-2 font-bold text-lg">
-              Preparation time
-            </label>
+          <h3>Preparation time</h3>
+          <ul className="list-disc">
             <li>
               <b>Total</b>: Approximately 10 minutes
             </li>
@@ -32,10 +30,8 @@ export default function Home() {
           </ul>
         </section>
         <section id="ingredients" className="my-5">
-          <h2 className="text-primary-1 font-bold text-3xl mb-5">
-            Ingredients
-          </h2>
-          <ol>
+          <h2>Ingredients</h2>
+          <ul className="list-disc ">
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
             <li>Pepper, to taste</li>
@@ -43,14 +39,12 @@ export default function Home() {
             <li>
               Optional fillings: cheese, diced vegetables, cooked meats, herbs
             </li>
-          </ol>
+          </ul>
         </section>
         <div className="h-[1px] bg-light-grey my-5" />
         <section id="instructions" className="my-5">
-          <h2 className="text-primary-1 font-bold text-3xl mb-5">
-            Instructions
-          </h2>
-          <ol className="flex flex-col gap-2">
+          <h2>Instructions</h2>
+          <ol className="list-decimal">
             <li>
               <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of
               salt and pepper until they are well mixed. You can add a
@@ -83,7 +77,7 @@ export default function Home() {
         <div className="h-[1px] bg-light-grey my-5" />
 
         <section id="nutrition" className="my-5">
-          <h2 className="text-primary-1 font-bold text-3xl mb-5">Nutrition</h2>
+          <h2>Nutrition</h2>
           <p className="mb-3">
             The table below shows nutritional values per serving without the
             additional fillings.
@@ -130,7 +124,15 @@ export default function Home() {
           >
             Frontend Mentor
           </a>
-          . Coded by <a href="https://www.frontendmentor.io/profile/ansulagrawal" target="_blank" rel="author">Ansul Agrawal</a>.
+          . Coded by{" "}
+          <a
+            href="https://www.frontendmentor.io/profile/ansulagrawal"
+            target="_blank"
+            rel="author"
+          >
+            Ansul Agrawal
+          </a>
+          .
         </div>
       </div>
     </main>
